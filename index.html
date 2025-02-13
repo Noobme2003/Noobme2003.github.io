@@ -60,11 +60,20 @@
             background-color: #357ABD;
         }
 
+        /* Title style */
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <!-- Title -->
+        <h1>Clue#1</h1>
+
         <!-- Password input field -->
         <input type="text" placeholder="Enter your password here" id="passwordBox">
         
@@ -93,13 +102,33 @@
         // Function to handle password submission
         function submitPassword() {
             const enteredPassword = passwordBox.value;
-            // You can modify the condition based on your requirements
-            if (enteredPassword === "correctPassword") {
-                alert("Password correct! Redirecting...");
-                // Example redirection (replace with your actual link)
-                window.location.href = "https://drive.google.com/drive/folders/1HqSEWdUjvGEUFkWpG7TGmUyQ166mbVP6?usp=drive_link";
-            } else {
-                alert("Incorrect password. Please try again.");
+            
+            // Use a switch case with OR conditions for grouped passwords
+            switch(true) {
+                case (enteredPassword === "7f2h9y3" || enteredPassword === "x5p8r1k"):
+                    window.location.href = "https://drive.google.com/drive/folders/1Gyxgv84WxWhVaN9r1nLKGER_jvdCVqSe?usp=drive_link";
+                    break;
+                case (enteredPassword === "6a9m4t7" || enteredPassword === "z3n7y6v"):
+                    window.location.href = "https://drive.google.com/drive/folders/1YB7bHj53vvGv6UEr-K9kAfBHj9D676GO?usp=drive_link";
+                    break;
+                case (enteredPassword === "2k9b5f8" || enteredPassword === "p4x1m7h"):
+                    window.location.href = "https://drive.google.com/drive/folders/1nozRhjszp84q9qKj4JXIDB-BgbztkPiV?usp=drive_link";
+                    break;
+                case (enteredPassword === "8r2t5y9" || enteredPassword === "5t9x2h8"):
+                    window.location.href = "https://drive.google.com/drive/folders/14PyP9JNJqqcohpZsYQjQZM8E7HvXAlXD?usp=drive_link";
+                    break;
+                case (enteredPassword === "v3m8g1a" || enteredPassword === "7r2w9b4"):
+                    window.location.href = "https://drive.google.com/drive/folders/1Qbr7kyif79puRrsbay31-x7pbKMFFrk9?usp=drive_link";
+                    break;
+                case (enteredPassword === "y1p5n7k" || enteredPassword === "f6h9d3q"):
+                    window.location.href = "https://drive.google.com/drive/folders/1WPlwMGXIqawMMGZSntjbjP4RWFDdfnaH?usp=drive_link";
+                    break;
+                case (enteredPassword === "8s2x7u5" || enteredPassword === "k3w9v1d"):
+                    window.location.href = "https://drive.google.com/drive/folders/1sGfJcp1UB2pms8QApfzft3rSa6o1IfmT?usp=drive_link";
+                    break;
+                default:
+                    alert("Incorrect password. Please try again.");
+                    break;
             }
         }
     </script>
